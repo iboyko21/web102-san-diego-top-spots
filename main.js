@@ -3,23 +3,17 @@ $(document).ready(function() {
         $.each( data, function( key, value ) {
             $("#output").append( 
                 `<tr id="${key+1}">
+                <td>${key+1}</td>
                 <td>${value.name}</td> 
                 <td>${value.description}</td>
-                <td>${value.location[0]}</td> 
-                <td>${value.location[1]}</td>
+                <td>${value.location}</td> 
+                <td><a href="https://www.google.com/maps?q=${value.location[0]},${value.location[1]}" target="_blank">Open</a></td>
                 </tr>` 
                 );
         });
-
-        // for(i=0; i<items.length; i++){
-        //     $( "<p/>", {
-        //         "class": "output",
-        //         html: `${items[i].name} <br> ${items[i].description} <br> Location: long: ${items[i].location[0]} lat: ${items[i].location[1]}`
-        //         // items[i].name + "<br>" + items[i].description + "<br>" + "" + items[i].location 
-        //       }).appendTo( "#output" );
-        // }
-
       });
 });
 
 $("#test").append("This is a test text!");
+
+// https://www.google.com/maps?q=33.09745,-116.99572
