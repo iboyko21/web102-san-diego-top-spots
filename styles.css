@@ -70,3 +70,7 @@ tr:hover {
     background-color: coral;
     cursor: pointer;
 }
+
+#name {
+    font-weight: bold;
+}

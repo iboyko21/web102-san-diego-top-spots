@@ -3,7 +3,7 @@ $(document).ready(function() {
         $.each( data, function( key, value ) {
             $("#output").append( 
                 `<tr data-lat="${value.location[0]}" data-lng="${value.location[1]}">
-                    <td><b>${value.name}</b></td> 
+                    <td id="name">${value.name}</td> 
                     <td>${value.description}</td>
                 </tr>` 
                 );
