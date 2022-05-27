@@ -2,6 +2,7 @@
     "name": "san-diego-top-spots",
     "version": "0.1.0",
     "scripts": {
+        "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
         "test": "mocha --exit"
     },
     "dependencies": {
