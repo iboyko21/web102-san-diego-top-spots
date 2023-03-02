@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON( "data.json", function( data ) {
+    $.getJSON( "./data.json", function( data ) {
         $.each( data, function( key, value ) {
             $("#output").append( 
                 `<tr data-lat="${value.location[0]}" data-lng="${value.location[1]}">
